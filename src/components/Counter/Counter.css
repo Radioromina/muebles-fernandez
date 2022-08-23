@@ -1,4 +1,10 @@
 .button {
     background-color: rgb(80, 142, 145);
     border-color: rgb(80, 142, 145);
+    margin-top: 2rem;
+}
+.buttons{
+    background-color:rgb(80, 142, 145); 
+    border-color:rgb(80, 142, 145);
+    padding: 0.5rem;
 }

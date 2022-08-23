@@ -18,9 +18,9 @@ const Counter = ({stock, initial, onAdd}) => {
 
   return (
     <Container >
-        <Button className='button' onClick={Sumar}>+</Button>
+        <Button className='buttons' onClick={Sumar}>+</Button>
         <span>{counter}</span>
-        <Button className='button' onClick={Restar}>-</Button>
+        <Button className='buttons' onClick={Restar}>-</Button>
         <div>
           <Button className='button' onClick={()=>onAdd(counter)}>Agregar al Carrito</Button>
         </div>
