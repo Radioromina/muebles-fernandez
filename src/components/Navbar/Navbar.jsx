@@ -5,25 +5,28 @@ import "./Navbar.css"
 import logo from "../../log.svg"
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../CartWidget/CartWidget';
+import { NavLink } from 'react-router-dom';
+import ListGroup from 'react-bootstrap/ListGroup';
+
 
 function ColorSchemesExample() {
     return (
    
         <Navbar className="navbar">
           <Container>
-            <Navbar.Brand href="#home">
+            <NavLink to={"/"}>
                 <img src={logo} alt="" width={100}/>
-            </Navbar.Brand>
+            </NavLink>
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#features">Contacto</Nav.Link>
-              <Nav.Link href="#pricing"></Nav.Link>
+              <NavLink to={"/"} >Home</NavLink>
+              <NavLink to={"/productos"} >Productos</NavLink>
               <NavDropdown title="Productos" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Escritorio</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Sillas de Escritorio
-              </NavDropdown.Item>
+                <ListGroup>
+                  <NavLink to={"/categorias/escritorio"}>Escritorio</NavLink>
+                  <NavLink to={"/categorias/sillas"}>Sillas de Escritorio</NavLink>
+                </ListGroup>
               </NavDropdown>
+              <NavLink to={"/contacto"} >Contacto</NavLink>
               <CartWidget/>
             </Nav>
           </Container>

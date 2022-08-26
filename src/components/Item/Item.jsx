@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './Item.css'
 import Container from 'react-bootstrap/esm/Container';
+import { Link } from 'react-router-dom';
 
 function  Item({id, title, price, pictureUrl, description}) {
   return (
@@ -20,7 +21,9 @@ function  Item({id, title, price, pictureUrl, description}) {
         <Card.Text>
           ID: {id}
         </Card.Text>
-        <Button className="comprar">Comprar</Button>
+        <Link to={`/item-detail/${id}`}>
+          <Button className="comprar">Ver Más Detalles</Button>
+        </Link>
       </Card.Body>
     </Card>
   </Container>
