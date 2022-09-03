@@ -1,0 +1,17 @@
+.cart{
+    font-size: 2rem;
+}
+img.cart{
+    width: 5%;
+    max-width: 100vh;
+    align-self: center;
+}
+
+.cantidad{
+    text-align: center;
+    
+    font-weight: 600;
+}
+.button-trash{
+    background-color: rgb(80, 142, 145);
+}

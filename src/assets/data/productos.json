@@ -8,7 +8,9 @@
           "pictureUrl": "https://http2.mlstatic.com/D_NQ_NP_687019-MLA50310039834_062022-W.webp" ,
           "id": 1000,
           "altImg": "img",
-          "categoria": "escritorio"
+          "categoria": "escritorio",
+          "stock": 5
+          
         },
         {
           "title": "Escritorio industrial",
@@ -17,7 +19,8 @@
           "pictureUrl": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/623/421/products/lightroom-271-dd0a7163287aee6b8b16199500805582-1024-1024.jpg" ,
           "id": 1050,
           "altImg": "img",
-          "categoria":"escritorio"
+          "categoria":"escritorio",
+          "stock": 8
         },
         {
           "title": "Escritorio industrial",
@@ -26,7 +29,8 @@
           "pictureUrl": "https://d22fxaf9t8d39k.cloudfront.net/584cab0143b5b50c36168a9dd84e28581f150b4e75aa8a8eb09ebc4a772f743337896.jpeg",
           "id": 2000 ,
           "altImg": "img",
-          "categoria":"escritorio"
+          "categoria":"escritorio",
+          "stock": 8
         },
         {
           "title": "Escritorio industrial",
@@ -35,7 +39,8 @@
           "pictureUrl":"https://http2.mlstatic.com/D_NQ_NP_787361-MLA49283404380_032022-W.webp",
           "id":3000,
           "altImg": "img",
-          "categoria":"escritorio"
+          "categoria":"escritorio",
+          "stock": 22
         },
         {
           "title": "Escritorio Industrial",
@@ -44,7 +49,8 @@
           "pictureUrl":"https://http2.mlstatic.com/D_NQ_NP_776555-MLA49307244570_032022-O.webp",
           "id": 4000,
           "altImg": "img",
-          "categoria":"escritorio"
+          "categoria":"escritorio",
+          "stock": 54
         },
         {
           "title": "Silla de Escritorio",
@@ -53,7 +59,8 @@
           "pictureUrl":"https://i.blogs.es/f7e949/81v6i48cqsl._ac_sl1500_/1366_2000.jpeg",
           "id": 5000,
           "altImg": "img",
-          "categoria": "sillas"
+          "categoria": "sillas",
+          "stock": 16
         },
         {
           "title": "Silla de Escritorio",
@@ -62,7 +69,8 @@
           "pictureUrl":"https://i.blogs.es/85a761/71p-jmyauyl._ac_sl1500_/1366_2000.jpeg",
           "id": 6000,
           "altImg": "img",
-          "categoria":"sillas"
+          "categoria":"sillas",
+          "stock": 2
         },
           {
             "title": "Silla de Escritorio",
@@ -71,7 +79,8 @@
             "pictureUrl":"https://i.blogs.es/91c1d3/71yufl-tajl._ac_sl1500_/1366_2000.jpeg",
             "id": 7000,
             "altImg": "img",
-            "categoria":"sillas"
+            "categoria":"sillas",
+            "stock": 34
           },
           {
             "title": "Silla de Escritorio",
@@ -80,7 +89,8 @@
             "pictureUrl":"https://piccolorossi.com/wp-content/uploads/2022/05/2.-Silla-escritorio-Fresa-negra.jpg",
             "id": 8000,
             "altImg": "img",
-            "categoria":"sillas"
+            "categoria":"sillas",
+            "stock": 5
           }
           
           
