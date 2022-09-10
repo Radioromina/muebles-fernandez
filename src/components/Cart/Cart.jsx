@@ -4,6 +4,7 @@ import { GlobalContext } from '../../context/CartContext'
 import {Container} from "react-bootstrap"
 import CartItems from '../CartItems/CartItems'
 import "./Cart.css"
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
     const { carrito, clearItem, precioFinal} = useContext(GlobalContext)
@@ -24,7 +25,16 @@ const Cart = () => {
             </div>
           </div>
           </>)
-          : (<h2 className="carrito">Tu carrito esta vacio</h2>)
+          : (
+          <div>
+            <h2 className="carrito">Tu carrito esta vacio</h2>
+            <div>
+              <Link to="/productos">
+                <button className='button btn'>Volver a la tienda</button>
+              </Link>
+            </div>
+          </div>
+          )
         }
       </Container>
     )

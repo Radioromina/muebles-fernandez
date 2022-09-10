@@ -4,3 +4,7 @@
     font-size: 1.5rem;
     padding: 3rem;   
 }
+
+.basis{
+    flex-basis: 100%
+}

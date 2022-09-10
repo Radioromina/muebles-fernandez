@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import Button from 'react-bootstrap/esm/Button'
 import Container from 'react-bootstrap/esm/Container'
 import "./Counter.css"
 
@@ -18,11 +17,11 @@ const Counter = ({stock, initial, onAdd}) => {
 
   return (
     <Container >
-        <Button className='buttons' onClick={Restar}>-</Button>
+        <button className='buttons button btn' onClick={Restar}>-</button>
         <span>{counter}</span>
-        <Button className='buttons' onClick={Sumar}>+</Button>
+        <button className='buttons button btn' onClick={Sumar}>+</button>
         <div>
-          <Button className='button' onClick={()=>onAdd(counter)}>Agregar al Carrito</Button>
+          <button className='buttons button btn' onClick={()=>onAdd(counter)}>Agregar al Carrito</button>
         </div>    
     </Container>
   )

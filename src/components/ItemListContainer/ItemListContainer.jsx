@@ -3,8 +3,9 @@ import { useEffect, useState } from 'react'
 import ItemList from '../ItemList/ItemList'
 import "./ItemListContainer.css"
 import Container from 'react-bootstrap/esm/Container'
-import productosJSON from  "../../assets/data/productos.json"
 import {useParams} from "react-router-dom"
+import db from '../../services'
+import { getDocs, collection} from 'firebase/firestore'
 
 
 export default function ItemListContainer() {
@@ -14,25 +15,28 @@ export default function ItemListContainer() {
   const {categoria} = useParams()
 
   useEffect(() => {
-    let {productos} = productosJSON
-      new Promise((resolve, reject)=>{
-        setTimeout(() => {
-          productos = categoria ? productos.filter(el=>el.categoria === categoria): productos
-          resolve(productos)
-        }, 2000);
-      })
-      
-      
-      .then((data)=> setItems(data))
-      .then(error=> console.log(error))
-      .finally(()=> console.log("promesa finalizada"))
-      
-      return () => {
-        
+    const getColData = async () => {
+      try {
+        const data = collection (db,"productos");
+        const col = await getDocs (data);
+        const res = col.docs.map((doc)=>doc = {id:doc.id, ...doc.data()})
+        console.log(res)
+        setItems(res)
+      } catch (error){
+        console.log(error)
       }
-    }, [categoria])
+
+    }
+  getColData()
+
+
     
-    return (
+    return () => {
+      
+    };
+  }, [categoria])
+
+      return (
       <>
     
       <Container>

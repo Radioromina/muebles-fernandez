@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { useContext } from 'react'
-import { Container, Button } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { GlobalContext } from '../../context/CartContext'
 import Counter from "../Counter/Counter"
@@ -10,7 +10,7 @@ const ItemDetail = ({item}) => {
 
   const {addItem} = useContext(GlobalContext)
 
-  const {id, title, price, description, pictureUrl, altImg} = item
+  const {id, title, price, description, pictureUrl, altImg,stock } = item
   const [counter, setCounter] = useState (0)
   function onAdd(quantity){
     setCounter(quantity)
@@ -35,10 +35,17 @@ const ItemDetail = ({item}) => {
           <p>ID: {id}</p>
           {
             counter !== 0 ? 
-            (<Link to="/cart">
-              <Button>Finalizar Compra</Button>
-            </Link>):
-          (<Counter item={item} quantity={item.quantity}  stock={item.stock} initial={1} onAdd={onAdd}/>)
+            (<>
+            
+            <Link to="/cart">
+              <button className='button btn'>Finalizar Compra</button>
+            </Link>
+            <Link to="/productos">
+              <button className='button btn'>Volver a la tienda</button>
+              </Link>
+            </>
+            ):
+          (<Counter item={item}  stock={stock} initial={1} onAdd={onAdd}/>)
           }
         </div>
       </div>

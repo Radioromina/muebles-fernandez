@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './Item.css'
 import Container from 'react-bootstrap/esm/Container';
@@ -22,7 +21,7 @@ function  Item({id, title, price, pictureUrl, description}) {
           ID: {id}
         </Card.Text>
         <Link to={`/item-detail/${id}`}>
-          <Button className="comprar">Ver Más Detalles</Button>
+          <button className="comprar button btn">Ver Más Detalles</button>
         </Link>
       </Card.Body>
     </Card>

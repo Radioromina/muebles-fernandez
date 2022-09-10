@@ -35,7 +35,7 @@
         {
           "title": "Escritorio industrial",
           "price": 25600,
-          "description": "",
+          "description": "Escritorio industrial de color blanco con bandeja para teclado.",
           "pictureUrl":"https://http2.mlstatic.com/D_NQ_NP_787361-MLA49283404380_032022-W.webp",
           "id":3000,
           "altImg": "img",
@@ -45,7 +45,7 @@
         {
           "title": "Escritorio Industrial",
           "price": 28890,
-          "description":"Mesa Pc Industrial Hierro Y Madera + Bandeja Teclado 100x50",
+          "description":"Mesa Pc Industrial Hierro Y Madera + Bandeja Teclado 100x50.",
           "pictureUrl":"https://http2.mlstatic.com/D_NQ_NP_776555-MLA49307244570_032022-O.webp",
           "id": 4000,
           "altImg": "img",
