@@ -1,8 +1,10 @@
 import React from 'react'
+import "./Contacto.css"
+
 
 const Contacto = () => {
   return (
-    <div>Contacto</div>
+    <div className='contacto'>Contacto</div>
   )
 }
 

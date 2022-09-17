@@ -5,7 +5,7 @@ import {Container} from "react-bootstrap"
 import CartItems from '../CartItems/CartItems'
 import "./Cart.css"
 import { Link } from 'react-router-dom'
-
+import Formulario from "../Formulario/Formulario"
 const Cart = () => {
     const { carrito, clearItem, precioFinal} = useContext(GlobalContext)
 
@@ -24,13 +24,16 @@ const Cart = () => {
               <h2>Precio final: ${precioFinal}</h2>
             </div>
           </div>
+          <div>
+            <Formulario></Formulario>
+          </div>
           </>)
           : (
-          <div>
+          <div className='volver'>
             <h2 className="carrito">Tu carrito esta vacio</h2>
             <div>
               <Link to="/productos">
-                <button className='button btn'>Volver a la tienda</button>
+                <button className='button btn fs-3'>Volver a la tienda</button>
               </Link>
             </div>
           </div>

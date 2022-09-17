@@ -17,11 +17,11 @@ export default function ItemListContainer() {
   useEffect(() => {
     const getColData = async () => {
       try {
-        const data = collection (db,"productos");
-        const col = await getDocs (data);
+        const data = collection(db,"productos");
+        const col = await getDocs(data);
         const res = col.docs.map((doc)=>doc = {id:doc.id, ...doc.data()})
-        console.log(res)
-        setItems(res)
+        const res2 = categoria ? res.filter(el=> el.categoria === categoria) : res
+        setItems(res2)
       } catch (error){
         console.log(error)
       }

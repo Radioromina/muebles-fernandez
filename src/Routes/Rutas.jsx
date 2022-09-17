@@ -6,6 +6,7 @@ import Cart from '../components/Cart/Cart'
 import Contacto from '../components/Contacto/Contacto'
 import ItemDetailContainer from '../components/ItemDetailContainer/ItemDetailContainer'
 import Productos from '../components/Productos/Productos'
+import Footer from "../components/Footer/Footer"
 
 const Rutas = () => {
   return (
@@ -19,6 +20,7 @@ const Rutas = () => {
             <Route path='/cart' element={<Cart/>}/>
             <Route path='/contacto' element={<Contacto/>}/>
         </Routes>
+        <Footer/>
     </BrowserRouter>
     
   )

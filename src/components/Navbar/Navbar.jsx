@@ -29,8 +29,8 @@ function BasicExample() {
             <NavLink className="nav-link" to={"/productos"}>Productos</NavLink>
             <NavDropdown title="Categorías" id="basic-nav-dropdown">
                 <ListGroup>
-                    <NavLink className="border-bottom justify-content-center" to={"/categorias/escritorio"} >Escritorios</NavLink>
-                    <NavLink className="border-bottom" to={"/categorias/sillas"} >Sillas de Escritorio</NavLink>
+                    <NavLink className="border-bottom justify-content-center fs-4" to={"/categorias/escritorio"} >Escritorios</NavLink>
+                    <NavLink className="border-bottom fs-4" to={"/categorias/sillas"} >Sillas de Escritorio</NavLink>
                 </ListGroup>
             </NavDropdown>
             <NavLink className="nav-link" to={"/contacto"}>Contacto</NavLink>
