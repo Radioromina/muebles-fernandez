@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/esm/Container'
 import {useParams} from "react-router-dom"
 import db from '../../services'
 import { getDocs, collection} from 'firebase/firestore'
+import  Spinner  from '../Spinner/Spinner'
 
 
 export default function ItemListContainer() {
@@ -40,7 +41,7 @@ export default function ItemListContainer() {
       <>
     
       <Container>
-        {items.length < 1 ? (<h2>cargando...</h2>) : (<ItemList items={items}/>)}
+        {items.length < 1 ? (<Spinner/>) : (<ItemList items={items}/>)}
       </Container>
       
     </>

@@ -7,7 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import {NavLink} from "react-router-dom"
 import CartWidget from "../CartWidget/CartWidget"
 import "./Navbar.css"
-import logo from "../../log.svg"
+import logo from "../../logo.svg"
 
 
 function BasicExample() {
@@ -15,11 +15,11 @@ function BasicExample() {
   
 
   return (
-    <Navbar className="navbar" expand="lg">
+    <Navbar  sticky="top" className="navbar" expand="lg">
       <Container>
         <Navbar.Brand>
             <NavLink to={"/"}>
-                <img src={logo} width="140" className="d-inline-block " alt="logo"/>
+                <img src={logo} width="80" className="d-inline-block " alt="logo"/>
             </NavLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -33,7 +33,6 @@ function BasicExample() {
                     <NavLink className="border-bottom fs-4" to={"/categorias/sillas"} >Sillas de Escritorio</NavLink>
                 </ListGroup>
             </NavDropdown>
-            <NavLink className="nav-link" to={"/contacto"}>Contacto</NavLink>
            <CartWidget/>
           </Nav>
         </Navbar.Collapse>

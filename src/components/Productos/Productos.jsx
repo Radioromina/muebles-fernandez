@@ -4,7 +4,7 @@ import ItemListContainer from '../ItemListContainer/ItemListContainer'
 const Productos = () => {
   return (
     <>
-      <h2 className='pt-5'>Productos</h2>
+      <h1 className='fs-1 pt-5'>PRODUCTOS</h1>
       <ItemListContainer/>
     </>
   )

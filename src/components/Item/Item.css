@@ -2,3 +2,6 @@
     background-color:#508e91;
     border-color: #508e91;  
 }
+.container-card{
+    max-width: 1080px;
+}

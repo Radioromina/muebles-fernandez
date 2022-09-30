@@ -1,3 +1,51 @@
+.div-detail{
+    padding-top: 5rem;
+}
 .img-detail{
-    max-width: 40%  ;
+    max-width: 27%  ;
+}
+.item-detail{
+    min-height: 80vh;
+}
+.item{
+    width: 37%;
+}
+@media screen and (max-width: 1199px) {
+    .div-detail{
+        padding-top: 3rem;
+    }
+    
+}
+@media screen and (max-width:991px) {
+    .div-detail{
+        padding-top: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 776px){
+    .div-detail{
+        padding-top: 2rem;
+    }
+    .img-detail{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .item-card{
+        flex-direction: column;
+    }
+    .item{
+        width: 60%;
+    }
+        
+}
+
+@media screen and (max-width:575px){
+    .div-detail{
+        padding-top:0;
+    }
+    .item{
+        width: 100%;
+    }
 }

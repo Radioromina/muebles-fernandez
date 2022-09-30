@@ -1,10 +1,14 @@
 .navbar{
     background-color: rgb(80, 142, 145);
-    display: flex;
-    font-size: 1.5rem;
-    padding: 3rem;   
+    font-size: 1.5rem;  
+    min-height: 10vh; 
+
 }
 
 .basis{
     flex-basis: 100%
+}
+
+.img-logo{
+    max-width: 50%;
 }

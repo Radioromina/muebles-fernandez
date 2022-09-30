@@ -6,19 +6,16 @@ import { Link } from 'react-router-dom';
 
 function  Item({id, title, price, pictureUrl, description}) {
   return (
-    <Container className='d-flex p-3 col-4'>
-    <Card style={{ width: '18rem' }}>
+    <Container className=' container-card d-flex justify-content-center col-lg-4 col-md-6 col-sm-12 p-3'>
+    <Card style={{ width: '30rem' }}>
       <Card.Img variant="top" src={pictureUrl} />
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title className='fs-2'>{title}</Card.Title>
         <Card.Text>
           {description}
         </Card.Text>
-        <Card.Text>
+        <Card.Text className='fs-3'>
           Precio: ${price}
-        </Card.Text>
-        <Card.Text>
-          ID: {id}
         </Card.Text>
         <Link to={`/item-detail/${id}`}>
           <button className="comprar button btn">Ver Más Detalles</button>

@@ -16,12 +16,12 @@ const Counter = ({stock, initial, onAdd}) => {
 
 
   return (
-    <Container >
-        <button className='buttons button btn' onClick={Restar}>-</button>
+    <Container className='pt-5'>
+        <button className='buttons button btn fs-3' onClick={Restar}>-</button>
         <span>{counter}</span>
-        <button className='buttons button btn' onClick={Sumar}>+</button>
-        <div>
-          <button className='buttons button btn' onClick={()=>onAdd(counter)}>Agregar al Carrito</button>
+        <button className='buttons button btn fs-3' onClick={Sumar}>+</button>
+        <div className='pt-4'>
+          <button className='buttons button btn fs-3 ' onClick={()=>onAdd(counter)}>Agregar al Carrito</button>
         </div>    
     </Container>
   )

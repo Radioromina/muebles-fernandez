@@ -1,12 +1,17 @@
 import React from 'react'
-import { createContext,useState } from 'react'
+import { createContext,useState, useEffect } from 'react'
 
 
 export const GlobalContext = createContext()
 
 const CartContext = ({children}) => {
 
-    const [carrito, setCarrito] = useState([])
+    const [carrito, setCarrito] = useState(JSON.parse(localStorage.getItem("carrito"))||[])
+
+    useEffect(() => {
+        localStorage.setItem("carrito", JSON.stringify(carrito))
+    }, [carrito])
+    
 
     const addItem = (item,quantity)=>{
 
@@ -16,10 +21,10 @@ const CartContext = ({children}) => {
             let itemIdex = aux.findIndex(el=>el.id === item.id)
             aux[itemIdex]["quantity"] += quantity 
             setCarrito([...aux])
-            console.log("duplicado")
+        
         }else{
             setCarrito([...carrito, {...item, quantity}])
-            console.log("no duplicado")
+            
         }
 
     }
@@ -42,6 +47,7 @@ const CartContext = ({children}) => {
         carrito,
         precioFinal,
         addItem,
+        isInCart,
         clearItem,
         deleteItem,
         cartWidget
